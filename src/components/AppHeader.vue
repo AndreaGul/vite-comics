@@ -4,6 +4,13 @@ import AppNavbar from './AppNavbar.vue';
 export default {
     name : 'Headers',
 
+    // data(){
+    //     return{
+    //     
+
+    //     }
+    // }
+
     components:{
         AppLogo,
         AppNavbar,

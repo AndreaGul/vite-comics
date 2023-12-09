@@ -1,12 +1,21 @@
 <script>
+import AppLinks from './AppLinks.vue';
+import AppBottomBar from './AppBottomBar.vue';
 export default {
     name : 'Footer',
+    components: {
+        AppLinks,
+        AppBottomBar,
+    }
 }
 
 </script>
 
 <template>
-    <header><p>footer</p></header>
+   <footer>
+    <AppLinks/>
+    <AppBottomBar/>
+    </footer>
 </template>
 
 <style>

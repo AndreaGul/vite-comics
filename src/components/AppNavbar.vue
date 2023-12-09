@@ -74,7 +74,10 @@ export default {
 
 <template>
     <ul>
-        <li v-for="link in navbarLinks" :class="{active: link.active}"><a :href="link.link" :target="link.target">{{ link.name }}</a></li>
+        <li v-for="link in navbarLinks" :class="{active: link.active}">
+            <button><a :href="link.link" :target="link.target">{{ link.name }}</a></button>
+            
+        </li>
         
     </ul>
 </template>

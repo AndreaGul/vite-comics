@@ -82,8 +82,25 @@ export default {
     </ul>
 </template>
 
-<style>
- .active {
- background-color: red;
- }
+<style scoped lang="scss">
+@use '../styles/partials/variables' as *;
+
+ul{
+    gap: 32px;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    
+    line-height: 104px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.active {
+    color: $primary-celeste;
+
+    border-bottom: 4px solid $primary-celeste;
+}
 </style>

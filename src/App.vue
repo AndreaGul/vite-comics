@@ -14,12 +14,19 @@
 </script>
 
 <template>
-  <AppHeader />
+  <div class="container"><AppHeader />
   <AppMain/>
-  <AppFooter/>
+  <AppFooter/></div>
+  
 </template>
 
 <style lang="scss">
 @use './styles/partials/variables' as *;
 @use './styles/general.scss' as *;
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
 </style>

@@ -1,11 +1,14 @@
 <script>
 import AppLinks from './AppLinks.vue';
 import AppBottomBar from './AppBottomBar.vue';
+import AppBarIcons from './AppBarIcons.vue';
+
 export default {
     name : 'Footer',
     components: {
         AppLinks,
         AppBottomBar,
+        AppBarIcons,
     }
 }
 
@@ -13,6 +16,7 @@ export default {
 
 <template>
    <footer>
+    <AppBarIcons/>
     <AppLinks id="AppLinks"/>
     <AppBottomBar/>
     </footer>

@@ -81,6 +81,7 @@ footer{
                 
                 
                 
+                
                 .img-container{
                     height: 55px;
                     

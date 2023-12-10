@@ -23,7 +23,7 @@ export default {
     button{
         border: $primary-celeste solid 3px;
         padding: 16px 14px ;
-        cursor: pointer;
+        
 
         a{
             color: white;

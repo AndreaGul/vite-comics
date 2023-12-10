@@ -178,6 +178,7 @@ footer {
     
     li:first-child{
         margin: 20px 0;
+        text-transform: uppercase;
     }
 
     li {

@@ -58,11 +58,18 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../styles/partials/variables' as *;
 
 ul {
     display: flex;
     align-items: center;
-    
+    gap: 20px ;
+    color: $primary-celeste;
+    text-transform: uppercase;
+
+    li:first-child{
+        margin: 0 10px;
+    }
     
  }
 </style>

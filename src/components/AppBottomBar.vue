@@ -13,9 +13,12 @@ export default {
 </script>
 
 <template>
-    <footer class="container" >
-        <AppSignUp/>
-    <AppSocial/>
+    <footer  >
+        <div class="container">
+            <AppSignUp/>
+            <AppSocial/>
+        </div>
+      
 </footer>
     
 </template>
@@ -24,10 +27,16 @@ export default {
 @use '../styles/partials/variables' as *;
 
  footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 34px 0;
+    
     background-color: $primary-dark-grey;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 34px 0;
+    }
  }
+
+
 </style>

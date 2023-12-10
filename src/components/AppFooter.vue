@@ -13,10 +13,11 @@ export default {
 
 <template>
    <footer>
-    <AppLinks/>
+    <AppLinks id="AppLinks"/>
     <AppBottomBar/>
     </footer>
 </template>
 
-<style>
+<style scoped lang="scss">
+ 
 </style>

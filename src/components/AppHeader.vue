@@ -20,11 +20,12 @@ export default {
 </script>
 
 <template>
-    <header><AppLogo/>
+    <header class=" container"><AppLogo/>
         <AppNavbar/></header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use '../styles/partials/variables' as *;
 header {
     display: flex;
     justify-content: space-between;

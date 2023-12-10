@@ -14,7 +14,7 @@
 </script>
 
 <template>
-  <div class="container"><AppHeader />
+  <div ><AppHeader />
   <AppMain/>
   <AppFooter/></div>
   
@@ -24,9 +24,5 @@
 @use './styles/partials/variables' as *;
 @use './styles/general.scss' as *;
 
-.container {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-}
+
 </style>

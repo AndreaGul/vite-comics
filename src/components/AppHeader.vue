@@ -25,7 +25,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../styles/partials/variables' as *;
+@use '../assets/scss/partials/variables' as *;
+
 header {
     display: flex;
     justify-content: space-between;

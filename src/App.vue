@@ -21,8 +21,8 @@
 </template>
 
 <style lang="scss">
-@use './styles/partials/variables' as *;
-@use './styles/general.scss' as *;
+@use './assets/scss/main.scss' as *;
+
 
 
 </style>

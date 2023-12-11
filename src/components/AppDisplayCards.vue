@@ -11,15 +11,15 @@ export default {
 
 <template>
 
-    <li><p>aradsa</p></li>
-     <!-- <li v-for="card in cards" class="card-container"> 
+  
+     <li class="card-container"> 
         <div class="img-container">
           
             <img :src="image" :alt="title">
 
             <h3>{{ title }}</h3>
         </div>
-      </li> -->
+      </li>
 </template>
 
 <style lang="scss" scoped>

@@ -72,14 +72,17 @@ export default {
 <template>
     <div class="cards-container">
         <ul  class="cards" >
-            <!-- <AppDisplayCards/> -->
-            <li v-for="card in cards" class="card-container"> 
+            <AppDisplayCards v-for="card in cards" 
+                :image="card.thumb" 
+                :title="card.series"
+            />
+            <!-- <li v-for="card in cards" class="card-container"> 
                 <div class="img-container">
                 
                     <img :src="card.thumb" :alt="card.series">
                     <h3>{{ card.series }}</h3>
                 </div>
-            </li>
+            </li> -->
           <!-- <AppDisplayCards  :image="card.thumb" :title="card.series"/> -->
         </ul>
     </div>
@@ -93,7 +96,7 @@ export default {
             flex-wrap: wrap;
             gap: 30px;
 
-                .card-container {
+                :deep(.card-container) {
                     width: calc((100% - (30px *5 )) / 6);
                     
                     

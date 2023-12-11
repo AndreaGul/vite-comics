@@ -1,10 +1,10 @@
 <script>
+import AppMainCard from './AppMainCard.vue';
+
 export default {
     name : 'Main',
-    data (){
-        return{
-            text: '--> Contenti goes here <--',
-        }
+    components:  {
+        AppMainCard,
     }
 }
 
@@ -13,7 +13,7 @@ export default {
 <template>
     <header >
         <div class="container"> 
-            <p>{{text}}</p>
+            <AppMainCard/>
         </div>
     </header>
 </template>
@@ -25,13 +25,7 @@ export default {
 header {
     background-color: $primary-light-black;
 
-    .container {
-    padding: 56px 0;
-    p{
-        color: #ffffff;
-        font-size: 20px;
-    }
-    }
+   
 }
 
 

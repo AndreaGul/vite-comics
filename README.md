@@ -17,3 +17,12 @@ Per oggi diamo priorità alla struttura: quando è tutto bello solido, passiamo 
 4.1 e' composto anche esso da componenti ripetuti con immagini differenti
 4.2 e' composto da diverse liste di componenti diversi
 4.3 e' composto da cue componenti di cui uno che rappresenta un bottone e laltro che al sui interno ha i link dei social
+
+Aggiunta degli elementi nel main
+Descrizione:
+Continuate a lavorare nella stessa repo di ieri e create un nuovo componente che rappresenterà le card dei fumetti.
+Utilizzate i dati presenti nel file json che trovate in allegato e passateli al componente Card tramite props.
+Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con Sass.
+
+
+3.1 creiamo un componente che al suo interno conterra le cards dei vari fumetti

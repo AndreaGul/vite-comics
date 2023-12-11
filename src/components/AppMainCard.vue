@@ -4,6 +4,9 @@
 import AppDisplayCards from './AppDisplayCards.vue';
 export default {
     name : 'Card',
+    components: {
+        AppDisplayCards,
+    },
     data(){
         return {
            
@@ -60,49 +63,63 @@ export default {
         }
     },
 
-     components: {
-        AppDisplayCards,
-     }
+    
    
 }
 
 </script>
 
 <template>
-    <div>
-        <ul class="disposition" >
-            <li   >
-                <AppDisplayCards v-for="card in cards" :image="card.thumb" :series="title.series" />
+    <div class="cards-container">
+        <ul  class="cards" >
+            <!-- <AppDisplayCards/> -->
+            <li v-for="card in cards" class="card-container"> 
+                <div class="img-container">
+                
+                    <img :src="card.thumb" :alt="card.series">
+                    <h3>{{ card.series }}</h3>
+                </div>
             </li>
+          <!-- <AppDisplayCards  :image="card.thumb" :title="card.series"/> -->
         </ul>
     </div>
 </template>
 
 <style scoped lang="scss">
+    .cards-container{
+        padding: 55px 0;
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
 
-    .disposition {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        li {
-            width: calc((100% / 6 ) );
-           
+                .card-container {
+                    width: calc((100% - (30px *5 )) / 6);
+                    
+                    
+                    .img-container {
+                    aspect-ratio: 1/1;
+                    
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            
+                        }
+                    
+                    }
 
-           
-            .img-container {
+                    h3 {
+                        text-align: center;
+                        color: white;
+                        margin: 20px 0;
+                    }
 
-                img {
-                  width: 100%;
-                   height: 100%;    
-                   object-fit: cover;
-                    display: block;
-                 }
-                 
-            }  
-             
-            
-            
+                    
+                    }
         }
     }
+        
+    
 
 </style>

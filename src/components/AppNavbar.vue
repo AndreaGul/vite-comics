@@ -84,7 +84,7 @@ export default {
 
 <style scoped lang="scss">
 @use '../assets/scss/partials/variables' as *;
-@use '../assets/scss/partials/container' as *;
+
 
 ul{
     gap: 32px;

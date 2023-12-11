@@ -14,9 +14,11 @@
 </script>
 
 <template>
-  <div ><AppHeader />
-  <AppMain/>
-  <AppFooter/></div>
+  <div> 
+    <AppHeader />
+    <AppMain/>
+    <AppFooter/>
+  </div>
   
 </template>
 

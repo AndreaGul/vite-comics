@@ -17,7 +17,7 @@ export default {
 <template>
    <footer>
     <AppBarIcons/>
-    <AppLinks id="AppLinks"/>
+    <AppLinks />
     <AppBottomBar/>
     </footer>
 </template>
